@@ -1,15 +1,80 @@
-# Covid-classification-web-app-python-streamlit
+
+# Application Web de Classification COVID
+
+Il s'agit d'une application web permettant de classer les images radiographiques COVID-19 à l'aide d'un modèle d'apprentissage profond. L'application est développée en Python et Streamlit.
+
+## Table des matières
+
+- [Aperçu](#apercu)
+- [Fonctionnalités](#fonctionnalites)
+- [Installation](#installation)
+- [Utilisation](#utilisation)
+- [Démo](#demo)
+- [Contributions](#contributions)
+- [Licence](#licence)
+
+## Aperçu
+
+L'Application Web de Classification COVID permet aux utilisateurs de télécharger des images radiographiques et d'obtenir des prédictions quant à la présence éventuelle de COVID-19. Le modèle d'apprentissage profond utilisé pour la classification a été entraîné sur un ensemble de données d'images radiographiques.
+
+## Fonctionnalités
+
+- Téléchargez des images radiographiques pour la classification.
+- Consultez le résultat de la classification.
+- Interface conviviale.
+- Détails et informations sur le modèle.
+
+## Installation
+
+1. Clonez le dépôt :
+
+   ```bash
+   git clone https://github.com/LaurianeMD/Covid-classification-web-app-python-streamlit.git
+   cd Covid-classification-web-app-python-streamlit
 
 
-## model
-Un classificateur covid a été utilisé pour classer les images de radiographie X-RAY (COVID, NORMAL).
+## Créez un environnement virtuel (recommandé) :
+python -m venv venv
+source venv/bin/activate  # Sur Windows, utilisez `venv\Scripts\activate`
 
-Le modèle est entrainé en utilisant une base des données de radiographie sur Covid-19 disponible sur kaggle.
-Un modèle de réseau naturel de convolution a été utilisé.
+## Installez les paquets requis :
+pip install -r requirements.txt
 
-## data
-Données disponible sur kaggle à partir du lien : https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database
+## Modèle
+Un classificateur COVID a été utilisé pour classer les images de radiographie X-RAY (COVID, NORMAL). Le modèle est entraîné en utilisant une base de données de radiographies sur COVID-19 disponible sur Kaggle. Un modèle de réseau de neurones à convolution (CNN) a été utilisé.
 
-Pour davantage d'informations sur la base de données, se référer aux deux articles suivants:
--M.E.H. Chowdhury, T. Rahman, A. Khandakar, R. Mazhar, M.A. Kadir, Z.B. Mahbub, K.R. Islam, M.S. Khan, A. Iqbal, N. Al-Emadi, M.B.I. Reaz, M. T. Islam, “Can AI help in screening Viral and COVID-19 pneumonia?” IEEE Access, Vol. 8, 2020, pp. 132665 - 132676.  
--Rahman, T., Khandakar, A., Qiblawey, Y., Tahir, A., Kiranyaz, S., Kashem, S.B.A., Islam, M.T., Maadeed, S.A., Zughaier, S.M., Khan, M.S. and Chowdhury, M.E., 2020. Exploring the Effect of Image Enhancement Techniques on COVID-19 Detection using Chest X-ray Images. 
+## Données
+Les données sont disponibles sur Kaggle à partir du lien : Base de données radiographiques COVID-19
+
+## Utilisation
+Pour démarrer l'application web, exécutez la commande suivante :
+streamlit run app.py
+
+Cela lancera l'application dans votre navigateur web, et vous pourrez commencer à l'utiliser.
+
+## Démo
+Vous pouvez accéder à une démo en direct de l'application web à Lien de la démo.
+
+## Contributions
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer au projet, veuillez suivre ces étapes :
+
+-Forkez le dépôt.
+-Créez une nouvelle branche pour votre fonctionnalité ou correction de bogue.
+-Effectuez vos modifications et commitez-les.
+-Poussez vos modifications vers votre fork.
+-Créez une demande d'extraction (pull request).
+-Veuillez vous assurer de suivre le code de conduite du projet et de contribuer de manière respectueuse et collaborative.
+
+## Licence
+Ce projet est sous licence BSD 3 - voir le fichier LICENSE pour plus de détails.
+
+
+## Auteurs: 
+Ali Moussa MAIGA
+Lauriane MBAGDJE DORENAN
+Carel Brian Koudous Jesuton	MOUSSE
+Ghislain MWENEMBOKA BYAMONI
+
+
+
+
