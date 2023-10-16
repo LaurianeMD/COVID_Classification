@@ -70,10 +70,10 @@ Ce projet est sous licence BSD 3 - voir le fichier LICENSE pour plus de détails
 
 
 ## Auteurs: 
-Ali Moussa MAIGA
-Lauriane MBAGDJE DORENAN
-Carel Brian Koudous Jesuton	MOUSSE
-Ghislain MWENEMBOKA BYAMONI
+1.Ali Moussa MAIGA
+2.Lauriane MBAGDJE DORENAN
+3.Carel Brian Koudous Jesuton	MOUSSE
+4.Ghislain MWENEMBOKA BYAMONI
 
 
 
