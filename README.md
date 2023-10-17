@@ -1,4 +1,4 @@
-
+![COVID](image.png)
 # Application Web de Classification COVID
 
 Il s'agit d'une application web permettant de classer les images radiographiques COVID-19 à l'aide d'un modèle d'apprentissage profond. L'application est développée en Python et Streamlit.
@@ -40,11 +40,17 @@ source venv/bin/activate  # Sur Windows, utilisez `venv\Scripts\activate`
 ## Installez les paquets requis :
 pip install -r requirements.txt
 
+## Structure du Projet
+data/ : Répertoire contenant les données.<br>
+cnn.py : Script de formation du modèle.<br>
+main.py : Script pour faire des prédictions avec le modèle entraîné.<br>
+util.py : Fonctions utilitaires.<br>
+
 ## Modèle
 Un classificateur COVID a été utilisé pour classer les images de radiographie X-RAY (COVID, NORMAL). Le modèle est entraîné en utilisant une base de données de radiographies sur COVID-19 disponible sur Kaggle. Un modèle de réseau de neurones à convolution (CNN) a été utilisé.
 
 ## Données
-Les données sont disponibles sur Kaggle à partir du lien : Base de données radiographiques COVID-19
+Les données sont disponibles sur Kaggle à partir du lien : https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database
 
 ## Utilisation
 Pour démarrer l'application web, exécutez la commande suivante :
@@ -53,27 +59,27 @@ streamlit run app.py
 Cela lancera l'application dans votre navigateur web, et vous pourrez commencer à l'utiliser.
 
 ## Démo
-Vous pouvez accéder à une démo en direct de l'application web à Lien de la démo.
+Vous pouvez accéder à une démo en direct de l'application web via ce lien :
 
 ## Contributions
 Les contributions sont les bienvenues ! Si vous souhaitez contribuer au projet, veuillez suivre ces étapes :
 
--Forkez le dépôt.
--Créez une nouvelle branche pour votre fonctionnalité ou correction de bogue.
--Effectuez vos modifications et commitez-les.
--Poussez vos modifications vers votre fork.
--Créez une demande d'extraction (pull request).
--Veuillez vous assurer de suivre le code de conduite du projet et de contribuer de manière respectueuse et collaborative.
+-Forkez le dépôt.<br>
+-Créez une nouvelle branche pour votre fonctionnalité ou correction de bogue.<br>
+-Effectuez vos modifications et commitez-les.<br>
+-Poussez vos modifications vers votre fork.<br>
+-Créez une demande d'extraction (pull request).<br>
+-Veuillez vous assurer de suivre le code de conduite du projet et de contribuer de manière respectueuse et collaborative.<br>
 
 ## Licence
 Ce projet est sous licence BSD 3 - voir le fichier LICENSE pour plus de détails.
 
 
 ## Auteurs: 
-1.Ali Moussa MAIGA
-2.Lauriane MBAGDJE DORENAN
-3.Carel Brian Koudous Jesuton	MOUSSE
-4.Ghislain MWENEMBOKA BYAMONI
+Ali Moussa MAIGA
+Lauriane MBAGDJE DORENAN
+Carel Brian Koudous Jesuton	MOUSSE
+Ghislain MWENEMBOKA BYAMONI
 
 
 
