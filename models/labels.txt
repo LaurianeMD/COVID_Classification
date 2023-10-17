@@ -1,3 +1,2 @@
 0 COVID
 1 NORMAL
-
