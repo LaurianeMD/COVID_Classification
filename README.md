@@ -43,8 +43,8 @@ pip install -r requirements.txt
 ## Structure du Projet
 data/ : Répertoire contenant les données.<br>
 cnn.py : Script de formation du modèle.<br>
-main.py : Script pour faire des prédictions avec le modèle entraîné.<br>
-util.py : Fonctions utilitaires.<br>
+covid_model.py : Script pour faire des prédictions avec le modèle entraîné.<br>
+
 
 ## Modèle
 Un classificateur COVID a été utilisé pour classer les images de radiographie X-RAY (COVID, NORMAL). Le modèle est entraîné en utilisant une base de données de radiographies sur COVID-19 disponible sur Kaggle. Un modèle de réseau de neurones à convolution (CNN) a été utilisé.
