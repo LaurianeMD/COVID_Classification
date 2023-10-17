@@ -1,5 +1,5 @@
 ![COVID](image.png)
-# Application Web de Classification COVID
+# Application Web de Classification COVID  https://covid-detection.streamlit.app/
 
 Il s'agit d'une application web permettant de classer les images radiographiques COVID-19 à l'aide d'un modèle d'apprentissage profond. L'application est développée en Python et Streamlit.
 
