@@ -54,7 +54,7 @@ Les données sont disponibles sur Kaggle à partir du lien : https://www.kaggle.
 
 ## Utilisation
 Pour démarrer l'application web, exécutez la commande suivante :
-streamlit run app.py
+streamlit run main.py
 
 Cela lancera l'application dans votre navigateur web, et vous pourrez commencer à l'utiliser.
 
@@ -80,7 +80,7 @@ Ali Moussa MAIGA <br>
 Lauriane MBAGDJE DORENAN <br>
 Carel Brian Koudous Jesuton MOUSSE <br>
 Ghislain MWENEMBOKA BYAMONI <br>
-
+Milse William NZINGOU MOUHEMBE <br>
 
 
 
