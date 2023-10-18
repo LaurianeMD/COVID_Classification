@@ -29,7 +29,7 @@ L'Application Web de Classification COVID permet aux utilisateurs de télécharg
 1. Clonez le dépôt :
 
    ```bash
-   git clone https://github.com/LaurianeMD/Covid-classification-web-app-python-streamlit.git
+   git clone [https://github.com/LaurianeMD/COVID_Classification]
    cd Covid-classification-web-app-python-streamlit
 
 
@@ -41,9 +41,10 @@ source venv/bin/activate  # Sur Windows, utilisez `venv\Scripts\activate`
 pip install -r requirements.txt
 
 ## Structure du Projet
-data/ : Répertoire contenant les données.<br>
+xray_data/ : Répertoire contenant les données.<br>
 cnn.py : Script de formation du modèle.<br>
-covid_model.py : Script pour faire des prédictions avec le modèle entraîné.<br>
+main..py : Script pour faire des prédictions avec le modèle entraîné.<br>
+util.py: Fonction utilitaires
 
 
 ## Modèle
@@ -59,7 +60,8 @@ streamlit run main.py
 Cela lancera l'application dans votre navigateur web, et vous pourrez commencer à l'utiliser.
 
 ## Démo
-Vous pouvez accéder à une démo en direct de l'application web via ce lien :
+Vous pouvez accéder à une démo en direct de l'application web via ce lien :  https://covid-detection.streamlit.app/
+
 
 ## Contributions
 Les contributions sont les bienvenues ! Si vous souhaitez contribuer au projet, veuillez suivre ces étapes :
