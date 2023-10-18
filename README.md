@@ -41,7 +41,7 @@ source venv/bin/activate  # Sur Windows, utilisez `venv\Scripts\activate`
 pip install -r requirements.txt
 
 ## Structure du Projet
-xray_data/ : Répertoire contenant les données.<br>
+Xray_data/ : Répertoire contenant les données.<br>
 cnn.py : Script de formation du modèle.<br>
 main..py : Script pour faire des prédictions avec le modèle entraîné.<br>
 util.py: Fonction utilitaires
