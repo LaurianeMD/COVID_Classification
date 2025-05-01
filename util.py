@@ -1,19 +1,14 @@
 import base64
-
 import streamlit as st
-from PIL import ImageOps, Image
+from PIL import Image
 import numpy as np
-
 
 def set_background(image_file):
     """
-    This function sets the background of a Streamlit app to an image specified by the given image file.
+    Set a custom image background in the Streamlit app.
 
-    Parameters:
-        image_file (str): The path to the image file to be used as the background.
-
-    Returns:
-        None
+    Args:
+        image_file (str): Path to the image file.
     """
     with open(image_file, "rb") as f:
         img_data = f.read()
@@ -28,21 +23,26 @@ def set_background(image_file):
     """
     st.markdown(style, unsafe_allow_html=True)
 
-
 def predict(img, model, class_names):
-    img = np.expand_dims(img, axis=0)  # Ajoute une dimension de lot (batch)
-    # Normalisation de l'image (si nécessaire)
-    img = img / 255.0  # Vous pouvez adapter la normalisation en fonction de celle utilisée pendant l'entraînement
-    
-    # Prédiction de la classe de l'image
-    prediction = model.predict(img)
-    
-    # Convertir le score prédit en étiquette binaire
-    seuil = 0.5  # Vous pouvez ajuster le seuil au besoin
-    binary_prediction = (prediction > seuil).astype(int)
-    class_index = binary_prediction[0][0]
+    """
+    Predict the class of an image using a trained model.
 
+    Args:
+        img (np.array): Preprocessed image of shape (1, 224, 224, 3)
+        model (tf.keras.Model): Trained model to use for prediction
+        class_names (list): List of class names
+
+    Returns:
+        Tuple: (predicted class name, confidence score)
+    """
+    img = img / 255.0  # Normalize pixel values between 0 and 1
+
+    prediction = model.predict(img)  # Shape: (1, 1) for binary classification
+
+    threshold = 0.5
+    binary_prediction = (prediction > threshold).astype(int)  # Convert to 0 or 1
+    class_index = binary_prediction[0][0]                     # Extract predicted index
     class_name = class_names[class_index]
-    confidence_score = prediction[0][0]
+    confidence_score = prediction[0][0]                       # Raw confidence score (between 0 and 1)
 
     return class_name, confidence_score
